@@ -36,7 +36,11 @@ Update-Environment-Path
 choco install nvm --yes
 Update-Environment-Path
 
-nvm use 14.17.5
+nvm install 17.6.0
+
+nvm use 17.6.0
+Update-Environment-Path
+
 npm install -g yarn
 
 #python 
@@ -46,15 +50,10 @@ Update-Environment-Path
 conda config --set env_prompt '({name}) '
 
 
-## Hyper-V required for docker and other things
-Enable-WindowsOptionalFeature -Online -FeatureName:Microsoft-Hyper-V -All -NoRestart
-choco install docker-desktop --yes
-
 Update-Environment-Path
 
 #
 # VS Code
-
 choco install visualstudiocode --yes # includes dotnet
 Update-Environment-Path
 
@@ -75,5 +74,12 @@ Update-Environment-Path
 
 # Windows Subsystem for Linux
 wsl --install
+wsl --install -d Ubuntu-18.04
+wsl --set-default-version 2
+Update-Environment-Path
+
+choco install docker-desktop --yes
 
 Write-Output "Finished! Run `choco upgrade all` to get the latest software"
+Write-Output "Generating rsa"
+ssh-keygen -t rsa
