@@ -9,7 +9,7 @@ code --list-extensions | % { "code --install-extension $_" }
 2. Paste your vscode extensions into `vscode_extensions.sh`. 
 3. Check that `win_env.ps1` contains things you want. Remove things you don't want, add things you do.
 4. Open an admin powershell terminal on the new machine.
-5. You might need to bypass powershell's execution policy. The following will do so for the current window
+5. You might need to bypass powershell's execution policy. The following will do so for the script
 ```powershell 
 Unblock-File .\win_env.ps1
 ```
