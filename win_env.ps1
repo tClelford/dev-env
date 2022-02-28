@@ -27,7 +27,7 @@ choco install gitkraken --yes
 choco install intellijidea-community --yes
 
 #SQL
-choco install mssqlexpress2014sp1wt --yes --params '/SECURITYMODE=SQL /SAPWD=Changethispasswordwhenyourefinished123!'
+choco install sql-server-express --yes --params '/SECURITYMODE=SQL /SAPWD=Changethispasswordwhenyourefinished123!'
 choco install sql-server-management-studio --yes
 Update-Environment-Path
 
