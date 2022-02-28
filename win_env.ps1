@@ -58,6 +58,8 @@ choco install vlc --yes
 # Browsers
 choco install googlechrome --yes
 
+choco install slack --yes
+
 refreshenv
 
 # Windows Subsystem for Linux
