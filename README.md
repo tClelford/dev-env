@@ -11,13 +11,16 @@ code --list-extensions | % { "code --install-extension $_" }
 4. Open an admin powershell terminal on the new machine.
 5. You might need to bypass powershell's execution policy. The following will do so for the current window
 ```powershell 
-Set-ExecutionPolicy Bypass -Scope Process
+Unblock-File .\win_env.ps1
 ```
 6. Run `win_env.ps1`
 7. Put the kettle on
 8. do the tidy-up. Things like:
     - Setting the SQL sa password to something sensible
     - Setting up your WSL user
-    - finish setting up your git rsa key
+    - add your newly-generated ssh key to your github account. This command will copy your newly-created public key to the clipboard
+```powershell 
+Get-Content $HOME\.ssh\id_rsa.pub | Set-Clipboard
+```
 
  
