@@ -36,12 +36,11 @@ Update-Environment-Path
 choco install nvm --yes
 Update-Environment-Path
 
-nvm install 17.6.0
+nvm install 16
+nvm use 16
 
-nvm use 17.6.0
-Update-Environment-Path
-
-npm install -g yarn
+#yarn
+npm i -g corepack
 
 #python 
 choco install miniconda3 --yes --params '/AddToPath:1'
