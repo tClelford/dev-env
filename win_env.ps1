@@ -48,6 +48,13 @@ refreshenv
 #vs code extenstions
 bash.exe vscode_extensions.sh
 
+#azure stuff
+choco install azure-functions-core-tools --yes
+refreshenv
+choco install azure-cli --yes
+refreshenv
+
+
 # Windows Terminal
 choco install microsoft-windows-terminal --yes
 
@@ -57,10 +64,16 @@ choco install vlc --yes
 
 # Browsers
 choco install googlechrome --yes
+refreshenv
 
 choco install slack --yes
+choco install spotify --yes
 
-refreshenv
+
+
+choco install 
+
+
 
 # Windows Subsystem for Linux
 wsl --install
