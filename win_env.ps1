@@ -71,7 +71,7 @@ choco install spotify --yes
 
 
 
-choco install 
+choco install postman
 
 
 
