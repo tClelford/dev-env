@@ -35,10 +35,12 @@ npm i -g corepack
 choco install miniconda3 --yes --params '/AddToPath:1'
 refreshenv
 
-conda config --set env_prompt '({name}) '
-
-
+conda init powershell
 refreshenv
+conda config --set env_prompt '({name}) '
+refreshenv
+
+
 
 #
 # VS Code
