@@ -55,7 +55,7 @@ choco install azure-functions-core-tools --yes
 refreshenv
 choco install azure-cli --yes
 refreshenv
-
+choco install microsoftazurestorageexplorer --yes
 
 # Windows Terminal
 choco install microsoft-windows-terminal --yes
