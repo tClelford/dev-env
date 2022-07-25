@@ -40,7 +40,8 @@ refreshenv
 conda config --set env_prompt '({name}) '
 refreshenv
 
-
+#
+choco install obsidian --yes
 
 #
 # VS Code
